@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanMart - Organic Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2c3e50;
+            padding: 10px 20px;
+            color: white;
+        }
+        .search-bar {
+            padding: 5px;
+            width: 200px;
+        }
+        .search-btn {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        .banner {
+            background: #2ecc71;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            width: 45%;
+        }
+        .banner.secondary {
+            background: #f39c12;
+        }
+        .products {
+            text-align: center;
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background: white;
+            text-align: center;
+            width: 150px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+        }
+        .add-to-cart {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">KisanMart</div>
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn">Search</button>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="banner">
+            <h1>Fresh & Healthy Organic Food</h1>
+            <p>Sale up to <span>30% OFF</span></p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+        <div class="banner secondary">
+            <h2>100% Fresh Fruit</h2>
+            <p>Up to <span>60% OFF</span></p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </section>
+    
+    <section class="products">
+        <h2>Popular Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="apple.png" alt="Green Apple">
+                <h3>Green Apple</h3>
+                <p>$14.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="mango.png" alt="Mango">
+                <h3>Surjapur Mango</h3>
+                <p>$14.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- More products can be added here -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 KisanMart. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
